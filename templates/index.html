@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommender</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url("{{ url_for('static', filename='bg_updated.jpg') }}");
+            background-size: cover;
+            /* You can add more background properties if needed */
+        }
+
+        .white-bold {
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="white-bold">Select a Movie</h1>
+        <form action="/recommend" method="post">
+            <div class="form-group">
+                <select class="form-control" name="movie">
+                    {% for title in movie_titles %}
+                        <option>{{ title }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Get Recommendations</button>
+        </form>
+    </div>
+</body>
+</html>
+
