@@ -118,6 +118,12 @@ Where:
 - **Applications:** Implement in chatbots, virtual assistants, and recommendation systems
 - **User Experience:** Develop intuitive web or mobile applications
 
+## Contributing
+Contributions are welcome! Please open an issue or submit a pull request for any improvements.
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
 ## Acknowledgements
 
 Special thanks to the open-source community and the authors of the pre-trained ResNet model. This project was made possible by the contributions and support of various developers and researchers in the field of deep learning.
